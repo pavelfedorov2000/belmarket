@@ -1,0 +1,38 @@
+.other-materials {
+
+    // .other-materials__slider
+
+    &__slider {}
+}
+
+.other-material {
+
+    // .other-material__header
+
+    &__header {
+        @extend %flex-row-center;
+        margin-bottom: 15px;
+    }
+
+    // .other-material__category
+
+    &__category {
+        font-size: 16px;
+        line-height: 22px;
+        color: $accent;
+    }
+
+    // .other-material__date
+
+    &__date {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    // .other-material__title
+
+    &__title {
+        font-weight: 400;
+    }
+}

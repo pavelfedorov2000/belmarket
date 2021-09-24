@@ -1,0 +1,117 @@
+.pagination {
+    //display: flex;
+    //width: 30%;
+    //justify-content: space-between;
+    //margin: 0 auto;
+    //padding: 20px 0;
+    @extend %flex-center;
+
+    &__item {
+        width: 35px;
+        height: 35px;
+        border: 0.5px solid #E0E0E0;
+        @extend %flex-center;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #BDBDBD;
+        margin: 0 7.5px;
+        transition: .3s all;
+        @media(max-width: 575px) {
+            width: 27px;
+            height: 26px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                color: #fff;
+                background-color: $accent;
+            }
+        }
+
+        &:last-child {
+            border: none;
+            svg {
+                width: 19px;
+                height: 34px;
+                @media(max-width: 575px) {
+                    width: 15px;
+                    height: 26px;
+                }
+            }
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        &--active {
+            color: #fff;
+            background-color: $accent;
+        }
+
+        &--dots {
+            position: relative;
+            border: none;
+            align-self: flex-end;
+            padding: 0 12.8px;
+            height: 5px;
+            @media(max-width: 575px) {
+                height: 4px;
+                padding: 0 10px;
+            }
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 5px;
+                height: 100%;
+                background-color: #E0E0E0;
+                transition: .3s background-color;
+                @media(max-width: 575px) {
+                    width: 4px;
+                }
+            }
+            &:before {
+                left: 0;
+            }
+            &:after {
+                right: 0;
+            }
+            div {
+                width: 5px;
+                height: 5px;
+                background-color: #E0E0E0;
+                transition: .3s background-color;
+                @media(max-width: 575px) {
+                    width: 4px;
+                    height: 4px;
+                }
+            }
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: transparent;
+                    div,
+                    &:before,
+                    &:after {
+                        background-color: $accent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* .pagination a {
+    color: #004d71;
+    font-size: 20px;
+}
+
+.current-page a {
+    background-color: #3471a2;
+    color: white;
+    padding: 8px;
+} */

@@ -1,0 +1,279 @@
+@import './vars';
+@import './mixins';
+@import './fonts';
+@import './null';
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+    /* @supports ((-webkit-backdrop-filter: blur(31px)) or (backdrop-filter: blur(31px))) {
+        background: #fff;
+        backdrop-filter: blur(31px);
+    } */
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.padding-30 {
+    padding-top: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    >* {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .tablet-none {
+        display: none;
+    }
+}
+
+.text-wrapper {
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    line-height: 1.44;
+}
+
+.text-wrapper h1 {
+    font-size: 36px;
+    line-height: 1.22;
+    margin-bottom: 20px;
+}
+
+._ibg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+}
+
+.section-title {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.grid-sm {
+    @media(min-width: 576px) {
+        display: grid;
+    }
+}
+
+.col-4 {
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+
+.col-md-2 {
+    @media(max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.articles-section {
+
+    // .articles-section__top
+
+    &__top {
+        @extend %flex-row-center;
+        padding-bottom: 10px;
+        border-bottom: 1.00831px solid #141414;
+        margin-bottom: 25px;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: static;
+    width: 25px;
+    height: 25px;
+    border: 0.3px solid #141414;
+    margin: 0;
+}
+
+.swiper-button-next {
+    margin-left: 6px;
+}
+
+// Стили для странмицы показа
+._progress {
+    height: 100vh;
+    width: 100vw;
+    @extend %flex-center;
+}
+
+/* ._progress__inner {
+    columns: 2;
+    @media(max-width: 1024px) {
+        columns: 1;
+    }
+} */
+
+._progress__link {
+    display: block;
+    font-size: 1.5vmax;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    transition: opacity 0.3s;
+    @media (any-hover: hover) {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+
+.currency-rates {
+
+    // .currency-rates__item
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
+    // .currency-rates__title
+
+    &__title {
+        font-weight: 700;
+        padding-bottom: 10px;
+        border-bottom: 1.00831px solid #141414;
+        margin-bottom: 30px;
+    }
+}
+
+.currency-converter {
+    background-color: #F2F2F2;
+    padding: 25px 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    //display: flex;
+    //justify-content: space-between;
+
+    // .currency-converter__input
+
+    &__input,
+    &__output {
+        display: grid;
+        grid-template-columns: auto 80px;
+        grid-gap: 10px;
+        >* {
+            //display: inline-block;
+            height: 40px;
+            background-color: #FFFFFF;
+            border: 0.5px solid #828282;
+            line-height: 23px;
+            /* &:not(:last-child) {
+                margin-right: 10px;
+            } */
+        }
+    }
+
+    // .currency-converter__input-field
+
+    &__input-field {
+        //width: 225px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    // .currency-converter__select
+
+    &__select {
+        //width: 80px;
+        //margin-left: 10px;
+        padding-left: 12px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url(../img/arrow.svg);
+        background-size: 12px 8px;
+        background-position: calc(100% - 14px) 50%;
+        background-repeat: no-repeat;
+    }
+
+    // .currency-converter__output
+
+    &__output {}
+}
+
+.currency-table {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    font-size: 16px;
+    line-height: 26px;
+    border-collapse: 0;
+    border-spacing: 0;
+    text-align: center;
+
+    // .currency-table__header
+
+    &__header {
+        background-color: #DFE7EA;
+        td {
+            padding: 16.5px 0;
+            font-weight: 500;
+        }
+    }
+
+    // .currency-table__body
+
+    &__body {}
+
+    // .currency-table__row
+
+    &__row {
+        td {
+            padding: 13.5px 0;
+            &:nth-child(1) {
+                width: 100px;
+            }
+            &:nth-child(3) {
+                width: 130px;
+            }
+            &:not(:last-child) {
+                border-right: 1px solid #E0E0E0;
+            }
+        }
+        &:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+    }
+}

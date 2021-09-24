@@ -1,0 +1,41 @@
+.popular {
+    padding: 40px 0;
+    background-color: #F2F2F2;
+}
+
+.popular-item {
+    display: flex;
+
+    // .popular-item__img
+
+    &__img {
+        width: 130px;
+        height: 130px;
+        flex-shrink: 0;
+    }
+
+    // .popular-item__content
+
+    &__content {
+        padding-left: 15px;
+    }
+
+    // .popular-item__link
+
+    &__link {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: $accent;
+        margin-bottom: 15px;
+    }
+
+    // .popular-item__title
+
+    &__title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+    }
+}
