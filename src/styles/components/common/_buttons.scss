@@ -1,4 +1,17 @@
 .btn {
-    //background-color: $accent;
+    @extend %flex-center;
     text-align: center;
+    min-width: 50px;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.btn-red {
+    background-color: $accent;
+    color: #fff;
+    font-size: 16px;
+    //width: 298px;
+    height: 40px;
+    padding: 0 38.35px;
 }

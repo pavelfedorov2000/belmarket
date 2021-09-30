@@ -1,8 +1,17 @@
 .other-materials {
+    padding-bottom: 30px;
 
     // .other-materials__slider
 
-    &__slider {}
+    &__slider {
+        position: relative;
+        @media(max-width: 992px) {
+            padding-bottom: 35px;
+        }
+        @media(max-width: 575px) {
+            padding-bottom: 25px;
+        }
+    }
 }
 
 .other-material {
@@ -34,5 +43,11 @@
 
     &__title {
         font-weight: 400;
+        transition: .3s color;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $accent;
+            }
+        }
     }
 }

@@ -1,3 +1,9 @@
+@import './modules/currency/currency.scss';
+@import './modules/newspaper/newspaper.scss';
+
+// Aside sections
 @import './modules/popular/popular.scss';
 @import './modules/news/news.scss';
 @import './modules/other-materials/other-materials.scss';
+
+@import './modules/pagination/pagination.scss';

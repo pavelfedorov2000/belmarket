@@ -1,16 +1,42 @@
 .popular {
     padding: 40px 0;
     background-color: #F2F2F2;
+
+    &__items {
+        @media(min-width: 1200px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @media(min-width: 992px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 30px;
+        }
+        //margin: 0 -15px;
+    }
+
+    &__slider {
+        @media(max-width: 992px) {
+            padding-bottom: 35px;
+        }
+        @media(max-width: 575px) {
+            padding-bottom: 25px;
+        }
+    }
 }
 
 .popular-item {
     display: flex;
+    flex-shrink: 1;
+    @media(max-width: 992px) {
+        padding: 0;
+        flex-shrink: 0;
+    }
 
     // .popular-item__img
 
     &__img {
         width: 130px;
-        height: 130px;
+        //height: 130px;
         flex-shrink: 0;
     }
 

@@ -10,132 +10,23 @@
         <!-- @@include('../../blocks/modules/header/_header.html') -->
         <main class="page currency-rates">
             <div class="container padding-30 text-page">
-                <div class="row">
+                <div class="row currency-rates__row">
                     @@include('../../blocks/modules/sidebar/_left.html')
                     <div class="col-lg-6 text-wrapper">
                         <div class="currency-rates__item">
-                            <h2 class="currency-rates__title">Конвертер валют</h2>
-                            <div class="currency-converter">
-                                <div class="currency-converter__input">
-                                    <input class="currency-converter__input-field">
-                                    <select name="currency_input" id="currency_input"
-                                        class="currency-converter__select">
-                                        <option value="BYN">BYN</option>
-                                        <option value="AUD">AUD</option>
-                                        <option value="BGN">BGN</option>
-                                        <option value="UAH">UAH</option>
-                                        <option value="DKK">DKK</option>
-                                        <option value="USD">USD</option>
-                                        <option value="EUR">EUR</option>
-                                        <option value="PLN">PLN</option>
-                                        <option value="JPY">JPY</option>
-                                        <option value="IRR">IRR</option>
-                                        <option value="ISK">ISK</option>
-                                        <option value="CAD">CAD</option>
-                                        <option value="CNY">CNY</option>
-                                    </select>
-                                </div>
-                                <div class="currency-converter__output">
-                                    <input class="currency-converter__input-field">
-                                    <select name="currency_output" id="currency_output"
-                                        class="currency-converter__select">
-                                        <option value="USD">USD</option>
-                                        <option value="BYN">BYN</option>
-                                        <option value="AUD">AUD</option>
-                                        <option value="BGN">BGN</option>
-                                        <option value="UAH">UAH</option>
-                                        <option value="DKK">DKK</option>
-                                        <option value="EUR">EUR</option>
-                                        <option value="PLN">PLN</option>
-                                        <option value="JPY">JPY</option>
-                                        <option value="IRR">IRR</option>
-                                        <option value="ISK">ISK</option>
-                                        <option value="CAD">CAD</option>
-                                        <option value="CNY">CNY</option>
-                                    </select>
-                                </div>
-                            </div>
+                            <h2 class="line-title currency-rates__title">Конвертер валют</h2>
+                            @@include('../../blocks/modules/currency/_converter.html')
                         </div>
                         <div class="currency-rates__item">
-                            <h1 class="currency-rates__title">Курсы валют</h1>
-                            <table class="currency-table">
-                                <thead class="currency-table__header">
-                                    <tr>
-                                        <td>Код</td>
-                                        <td>Наименование</td>
-                                        <td>Курс НБРБ</td>
-                                    </tr>
-                                </thead>
-                                <tbody class="currency-table__body">
-                                    <tr class="currency-table__row">
-                                        <td>AUD</td>
-                                        <td>1 Австралийский доллар</td>
-                                        <td>2.0028</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>BGN</td>
-                                        <td>1 Болгарский лев</td>
-                                        <td>1.587</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>UAH</td>
-                                        <td>100 Гривен</td>
-                                        <td>9.4253</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>DKK</td>
-                                        <td>10 Датских крон</td>
-                                        <td>4.181</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>USD</td>
-                                        <td>1 Доллар США</td>
-                                        <td>2.6272</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>EUR</td>
-                                        <td>1 Евро</td>
-                                        <td>3.1082</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>PLN</td>
-                                        <td>10 Злотых</td>
-                                        <td>6.7193</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>JPY</td>
-                                        <td>100 Иен</td>
-                                        <td>2.4183</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>IRR</td>
-                                        <td>100000 Иранских риалов</td>
-                                        <td>6.2552</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>ISK</td>
-                                        <td>100 Исландских крон</td>
-                                        <td>2.0939</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>CAD</td>
-                                        <td>1 Канадский доллар</td>
-                                        <td>2.0903</td>
-                                    </tr>
-                                    <tr class="currency-table__row">
-                                        <td>CNY</td>
-                                        <td>10 Китайских юаней</td>
-                                        <td>4.0295</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <h1 class="line-title currency-rates__title">Курсы валют</h1>
+                            @@include('../../blocks/modules/currency/_table.html')
                         </div>
                     </div>
                     @@include('../../blocks/modules/sidebar/_right.html')
                 </div>
             </div>
 
-            <aside>
+            <aside class="bottom-sections">
                 @@include('../../blocks/modules/news/_news.html')
                 @@include('../../blocks/modules/other-materials/_other-materials.html')
                 @@include('../../blocks/modules/popular/_popular.html')
