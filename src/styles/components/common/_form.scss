@@ -1,0 +1,18 @@
+.input {
+    @extend %vertical-align;
+    height: 40px;
+    background-color: #fff;
+    padding: 0 10px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    &::placeholder {
+        color: rgba($dark, .6);
+    }
+    @media(max-width: 992px) {
+        height: 35px;
+        padding: 0 8px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
