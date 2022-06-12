@@ -1,0 +1,18 @@
+.newsletter {
+    // .newsletter__title
+
+    &__title {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+    // .newsletter__subtitle
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 20px;
+    }
+}

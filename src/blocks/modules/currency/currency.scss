@@ -1,0 +1,135 @@
+.currency-rates {
+
+    // .currency-rates__item
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+            @media(max-width: 992px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    // .currency-rates__title
+
+    &__title {
+        
+    }
+}
+
+.currency-converter {
+    background-color: #F2F2F2;
+    padding: 25px 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+
+    @media(max-width: 575px) {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    // .currency-converter__input
+
+    &__input,
+    &__output {
+        display: flex;
+        display: grid;
+        grid-template-columns: auto 80px;
+        grid-gap: 10px;
+        @media(max-width: 575px) {
+            grid-template-columns: repeat(auto, 74px);
+            grid-gap: 9px;
+        }
+
+        >* {
+            height: 40px;
+            background-color: #FFFFFF;
+            border: 0.5px solid #828282;
+            line-height: 23px;
+        }
+    }
+
+    // .currency-converter__input-field
+
+    &__input-field {
+        font-size: 18px;
+        line-height: 23px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0 15px;
+        @media(max-width: 575px) {
+            padding: 0 10px;
+        }
+    }
+
+    // .currency-converter__select
+
+    &__select {
+        padding-left: 10px;
+        background-size: 12px 8px;
+        background-position-x: calc(100% - 14px);
+    }
+}
+
+.currency-table {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    font-size: 16px;
+    line-height: 26px;
+    border-collapse: 0;
+    border-spacing: 0;
+    text-align: center;
+    @media(max-width: 575px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    // .currency-table__header
+
+    &__header {
+        background-color: #DFE7EA;
+
+        td {
+            padding: 16.5px 10px;
+            font-weight: 500;
+            @media(max-width: 575px) {
+                padding: 10px;
+            }
+        }
+    }
+
+    // .currency-table__row
+
+    &__row {
+        td {
+            padding: 13.5px 10px;
+            @media(max-width: 575px) {
+                padding: 10px;
+            }
+
+            &:nth-child(1) {
+                width: 100px;
+                @media(max-width: 575px) {
+                    width: 70px;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 130px;
+                @media(max-width: 575px) {
+                    width: 70px;
+                }
+            }
+
+            &:not(:last-child) {
+                border-right: 1px solid #E0E0E0;
+            }
+        }
+
+        &:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+    }
+}

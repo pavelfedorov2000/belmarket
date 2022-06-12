@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Архив газеты"
+})
+
+<body>
+
+    <div class="wrapper">
+        <!-- @@include('../../blocks/modules/header/_header.html') -->
+
+        <main class="page newspaper-archive">
+            <div class="container padding-30 text-page">
+                <div class="row currency-rates__row">
+                    @@include('../../blocks/modules/sidebar/_left.html')
+                    <div class="col-lg-6 text-wrapper">
+                        <h1 class="line-title">Архив газеты</h1>
+
+                        @@include('../../blocks/modules/newspaper/_filters.html')
+
+                        <div class="newspaper-archive__cards grid">
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 100</h3>
+                                        <div class="newspaper-archieve-card__date">
+                                            от <time datetime="2020-01-10">10.01.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 150</h3>
+                                        <div class="newspaper-archive-card__date">
+                                            от <time datetime="2020-01-10">13.02.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 250</h3>
+                                        <div class="newspaper-archive-card__date">
+                                            от <time datetime="2020-01-10">26.06.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 304</h3>
+                                        <div class="newspaper-archive-card__date">
+                                            от <time datetime="2020-01-10">13.06.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 501</h3>
+                                        <div class="newspaper-archive-card__date">
+                                            от <time datetime="2020-01-10">16.10.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 140</h3>
+                                        <div class="newspaper-archive-card__date">
+                                            от <time datetime="2020-01-10">08.05.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 112</h3>
+                                        <div class="newspaper-archive-card__date">
+                                            от <time datetime="2020-01-10">01.01.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 206</h3>
+                                        <div class="newspaper-archive-card__date">
+                                            от <time datetime="2020-01-10">16.08.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="newspaper-archive-card">
+                                <a href="#">
+                                    <header class="newspaper-archive-card__header">
+                                        <h3 class="newspaper-archive-card__num">№ 301</h3>
+                                        <div class="newspaper-archive-card__date">
+                                            от <time datetime="2020-01-10">30.12.2020</time>
+                                        </div>
+                                    </header>
+                                    <div class="newspaper-archive-card__img">
+                                        <img src="img/content/newspaper.jpg" alt="">
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        @@include('../../blocks/modules/pagination/_pagination.html')
+                    </div>
+                    @@include('../../blocks/modules/sidebar/_right.html')
+                </div>
+            </div>
+
+            <aside class="bottom-sections">
+                @@include('../../blocks/modules/news/_news.html')
+                @@include('../../blocks/modules/other-materials/_other-materials.html')
+                @@include('../../blocks/modules/popular/_popular.html')
+            </aside>
+        </main>
+
+        <!-- @@include('../../blocks/modules/footer/_footer.html') -->
+    </div>
+
+    @@include('../_js.html')
+</body>
+
+</html>

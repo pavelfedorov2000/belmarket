@@ -1,0 +1,71 @@
+.subscribes {
+    @media (min-width: 992px) {
+        display: grid;
+        row-gap: 38px;
+    }
+}
+
+.subscribe-box {
+    background-color: #f2f2f2;
+    padding: 25px 16px;
+
+    &--social {
+        padding: 20px 17px;
+    }
+    // .subscribe-box__title
+
+    &__title {
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 500;
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    // .subscribe-box__text
+
+    &__text {
+        font-size: 14px;
+        line-height: 100%;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .subscribe-box__form
+
+    &__form {
+        display: grid;
+        row-gap: 15px;
+    }
+
+    // .subscribe-box__input
+
+    &__input {
+    }
+
+    // .subscribe-box__btn
+
+    &__btn {
+    }
+
+    // .subscribe-box__social
+
+    &__social {
+        column-gap: 5px;
+    }
+
+    // .subscribe-box__social-item
+
+    &__social-item {
+        width: 25px;
+        height: 25px;
+        background-color: rgba($dark, 0.2);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $accent;
+            }
+        }
+    }
+}

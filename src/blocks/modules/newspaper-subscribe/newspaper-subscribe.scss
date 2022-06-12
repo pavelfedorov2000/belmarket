@@ -1,0 +1,69 @@
+.newspaper-subscribe {
+    position: relative;
+    background-image: url(../img/newspaper-subscribe.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    padding-left: 30px;
+    display: none;
+    @media (min-width: 1201px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 7px;
+        height: 100%;
+        background-color: $accent;
+    }
+
+    // .newspaper-subscribe__title
+
+    &__title {
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 500;
+    }
+
+    // .newspaper-subscribe__descr
+
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 40px;
+    }
+
+    // .newspaper-subscribe__arrows
+
+    &__arrows {
+        width: 35px;
+        height: 25px;
+    }
+
+    // .newspaper-subscribe__arrows--left
+
+    &__arrows--left {
+        margin-left: 35px;
+        margin-right: auto;
+    }
+
+    // .newspaper-subscribe__arrows--right
+
+    &__arrows--right {
+        margin-right: 35px;
+        margin-left: auto;
+    }
+
+    // .newspaper-subscribe__btn
+
+    &__btn {
+        width: 230px;
+        height: 100%;
+    }
+}

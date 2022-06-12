@@ -1,0 +1,23 @@
+@import 'common/common';
+@import 'nav/nav';
+
+// ===================== RADIO ===================== //
+.radio-box {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+.radio-box:checked+.radio-text {
+    color: $accent;
+    border-bottom: 1px solid $accent;
+}
+
+.radio-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+}

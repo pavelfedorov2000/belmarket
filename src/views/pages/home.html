@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html', {
+"title": "Главная"
+})
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+        @@include('../../blocks/modules/drop-menu/_drop-menu.html')
+        <main class="page home-page">
+            <div class="container">
+                @@include('../../blocks/modules/newspaper-subscribe/_newspaper-subscribe.html')
+                <div class="xl-grid col-xl-4 gap-30 home-page__wrapper">
+                    <div class="span-xl-3 home-page__body">
+                        <div class="home-page__top-inner grid gap-20">
+                            <article class="big-article">
+                                <a href="#" class="big-article__body">
+                                    <div class="big-article__img">
+                                        <img src="img/content/big-article.jpg" alt="фото" loading="lazy">
+                                    </div>
+                                    <div class="big-article__content">
+                                        <h5 class="big-article__title">
+                                            «Не пускаем студентов». В страну
+                                            не могут въехать белорусы, которые учатся за рубежом
+                                        </h5>
+                                        <p>
+                                            Со вчерашнего вечера в редакцию поступает информация о том, что белорусских
+                                            студентов, которые учатся за границей и хотели на этих выходных попасть в
+                                            Беларусь, не пускают
+                                            на родину.
+                                        </p>
+                                        <footer class="big-article__footer">
+                                            <time class="big-article__footer-item" datetime="2020-10-23">
+                                                23 октябр 2020
+                                            </time>
+                                            <div class="big-article__footer-item">
+                                                <svg>
+                                                    <use xlink:href="img/sprite.svg#eye"></use>
+                                                </svg>
+                                                <span>560</span>
+                                            </div>
+                                            <div class="big-article__footer-item">
+                                                <svg>
+                                                    <use xlink:href="img/sprite.svg#comment"></use>
+                                                </svg>
+                                                <span>223</span>
+                                            </div>
+                                            <div class="big-article__footer-item">
+                                                <svg>
+                                                    <use xlink:href="img/sprite.svg#share"></use>
+                                                </svg>
+                                                <span>102</span>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <div class="home-page__top-articles grid gap-25">
+                                <div class="grid col-sm-2 gap-20">
+                                    <article class="default-article">
+                                        <a class="default-article__inner" href="#">
+                                            <div class="img-wrap">
+                                                <img src="img/content/war.jpg" alt="фото" loading="lazy">
+                                            </div>
+                                            <p class="pt-15 fw-500">
+                                                Трагедия Армении, победа Азербайджана. Соглашение
+                                                по Карабаху в простых вопросах и ответах
+                                            </p>
+                                        </a>
+                                    </article>
+                                    <article class="default-article">
+                                        <a class="default-article__inner" href="#">
+                                            <div class="img-wrap">
+                                                <img src="img/content/stella.jpg" alt="фото" loading="lazy">
+                                            </div>
+                                            <p class="pt-15 fw-500">
+                                                Сто дней протестов, которые изменили Беларусь и потрясли мир
+                                            </p>
+                                        </a>
+                                    </article>
+                                </div>
+
+                                <div class="grid col-sm-2 column-gap-20">
+                                    <article class="small-article p10-0">
+                                        <a href="#" class="small-article__inner">
+                                            <div class="small-article__img"><img src="img/content/read-now/01.jpg"
+                                                    alt="фото" loading="lazy"></div>
+                                            <h6 class="small-article__title pl-20">
+                                                Под Минском женщина на Mercedes сбила троих детей
+                                            </h6>
+                                        </a>
+                                    </article>
+                                    <article class="small-article p10-0">
+                                        <a href="#" class="small-article__inner">
+                                            <div class="small-article__img"><img src="img/content/read-now/03.jpg"
+                                                    alt="фото" loading="lazy"></div>
+                                            <h6 class="small-article__title pl-20">
+                                                Врач назвал места, где проще всего заболеть COVID-19
+                                            </h6>
+                                        </a>
+                                    </article>
+                                    <article class="small-article p10-0">
+                                        <a href="#" class="small-article__inner">
+                                            <div class="small-article__img"><img src="img/content/read-now/02.jpg"
+                                                    alt="фото" loading="lazy"></div>
+                                            <h6 class="small-article__title pl-20">
+                                                В Беларуси очередной максимум по числу
+                                                заразившихся COVID-19
+                                            </h6>
+                                        </a>
+                                    </article>
+                                    <article class="small-article p10-0">
+                                        <a href="#" class="small-article__inner">
+                                            <div class="small-article__img"><img src="img/content/read-now/04.jpg"
+                                                    alt="фото" loading="lazy"></div>
+                                            <h6 class="small-article__title pl-20">
+                                                В Молдове стартовал второй тур выборов президента
+                                            </h6>
+                                        </a>
+                                    </article>
+                                    <article class="small-article p10-0">
+                                        <h6 class="small-article__title">
+                                            <a href="#">
+                                                Илон Маск считает, что болен коронавирусом в «умеренной» форме
+                                            </a>
+                                        </h6>
+                                    </article>
+                                    <article class="small-article p10-0">
+                                        <h6 class="small-article__title">
+                                            <a href="#">
+                                                Пашинян посоветовал военным решить вопрос со «скулящими» протестующими
+                                            </a>
+                                        </h6>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                        @@include('../../blocks/modules/popular/_popular-articles.html')
+
+                        @@include('../../blocks/modules/opinion/_opinion.html')
+
+                        <div class="grid col-lg-3 gap-30">
+                            <section class="span-2">
+                                <h2 class="line-title section-title">Продукты и цены</h2>
+                                <div class="grid col-2 gap-30">
+                                    <div class="flex lg-flex-col-reverse">
+                                        <article class="anons-article">
+                                            <a href="#" class="anons-article__body">
+                                                <img class="anons-article__img" src="img/content/usa.jpg" alt="фото"
+                                                    loading="lazy">
+                                                <h6 class="anons-article__text">
+                                                    Президентские выборы в США: Предчувствие гражданской войны
+                                                </h6>
+                                            </a>
+                                        </article>
+                                        <article class="small-article grow">
+                                            <time class="small-article__date" datetime="2020-10-23">23 октября
+                                                2020</time>
+                                            <a class="small-article__title" href="#">
+                                                43 компании обанкротились,
+                                                но это еще не конец. Как COVID-19 потрепал авиацию
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="flex lg-flex-col-reverse">
+                                        <a href="#" class="banner">
+                                            <img src="img/banners/summer-sale.jpg" alt="Летняя онлайн-распродажа 2019"
+                                                loading="lazy">
+                                            <span class="banner__descr">300px x 250px</span>
+                                        </a>
+                                        <article class="small-article grow">
+                                            <time class="small-article__date" datetime="2020-10-23">23 октября
+                                                2020</time>
+                                            <a class="small-article__title" href="#">
+                                                43 компании обанкротились,
+                                                но это еще не конец. Как COVID-19 потрепал авиацию
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="small-articles">
+                                <h2 class="line-title section-title">Здоровье</h2>
+                                <div class="small-articles__inner">
+                                    <article class="small-article health__article">
+                                        <a href="#" class="small-article__inner">
+                                            <h6 class="small-article__title pr-15">
+                                                Что делать с урожаем тыквы? Четыре рецепта
+                                                от шеф-повара
+                                            </h6>
+                                            <div class="small-article__img">
+                                                <img src="img/content/health/01.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="small-article health__article">
+                                        <a href="#" class="small-article__inner">
+                                            <h6 class="small-article__title pr-15">
+                                                В Минске пробегут<br>
+                                                с 200-килограммовым пианино
+                                            </h6>
+                                            <div class="small-article__img">
+                                                <img src="img/content/health/02.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="small-article health__article">
+                                        <a href="#" class="small-article__inner">
+                                            <h6 class="small-article__title pr-15">
+                                                Назван продукт, который помогает организму справиться с воспалением
+                                            </h6>
+                                            <div class="small-article__img">
+                                                <img src="img/content/health/03.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </section>
+                        </div>
+
+                        <section class="accidents">
+                            <h2 class="line-title section-title">Происшествия</h2>
+                            <div class="swiper slider accidents-slider">
+                                <div class="swiper-wrapper lg-grid col-lg-3 lg-gap-30">
+                                    <article class="anons-article swiper-slide pb-20">
+                                        <a href="#" class="anons-article__body">
+                                            <img class="anons-article__img" src="img/content/incidents/01.jpg"
+                                                alt="фото" loading="lazy">
+                                            <h6 class="anons-article__text">
+                                                В Бобруйском районе BMW насмерть сбил пенсионерку
+                                            </h6>
+                                        </a>
+                                    </article>
+                                    <article class="anons-article swiper-slide pb-20">
+                                        <a href="#" class="anons-article__body">
+                                            <img class="anons-article__img" src="img/content/incidents/02.jpg"
+                                                alt="фото" loading="lazy">
+                                            <h6 class="anons-article__text">
+                                                Под Витебском Renault насмерть сбил женщину
+                                            </h6>
+                                        </a>
+                                    </article>
+                                    <article class="anons-article swiper-slide pb-20">
+                                        <a href="#" class="anons-article__body">
+                                            <img class="anons-article__img" src="img/content/incidents/03.jpg"
+                                                alt="фото" loading="lazy">
+                                            <h6 class="anons-article__text">
+                                                Утром на МКАД дотла сгорел автомобиль
+                                            </h6>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </section>
+
+                        <section class="small-articles">
+                            <h2 class="line-title section-title">
+                                В мире
+                            </h2>
+                            <div class="grid col-sm-2 col-lg-3 gap-30">
+                                <div class="flex lg-flex-col-reverse">
+                                    <a href="#" class="banner">
+                                        <img src="img/banners/radio.jpg"
+                                            alt="Слушай самые свежие новинки и 100% хиты на Радио Обозреватель"
+                                            loading="lazy">
+                                        <span class="banner__descr">300px x 250px</span>
+                                    </a>
+                                    <article class="small-article">
+                                        <time class="small-article__date" datetime="2020-10-23">
+                                            23 октября 2020
+                                        </time>
+                                        <a class="small-article__title" href="#">
+                                            43 компании обанкротились,
+                                            но это еще не конец. Как COVID-19 потрепал авиацию
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="flex flex-col">
+                                    <article class="small-article">
+                                        <time class="small-article__date" datetime="2020-10-23">
+                                            23 октября 2020
+                                        </time>
+                                        <a class="small-article__title" href="#">
+                                            43 компании обанкротились,<br>
+                                            но это еще не конец. Как COVID-19 потрепал авиацию
+                                        </a>
+                                    </article>
+                                    <article class="small-article grow">
+                                        <time class="small-article__date" datetime="2020-10-23">
+                                            23 октября 2020
+                                        </time>
+                                        <a class="small-article__title" href="#">
+                                            Появились белорусские цены<br>
+                                            на iPhone 12
+                                        </a>
+                                    </article>
+                                    <article class="small-article">
+                                        <time class="small-article__date" datetime="2020-10-23">
+                                            23 октября 2020
+                                        </time>
+                                        <a class="small-article__title" href="#">
+                                            43 компании обанкротились,<br>
+                                            но это еще не конец. Как COVID-19 потрепал авиацию
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="grid gap-10 acs">
+                                    <article class="anons-article">
+                                        <a href="#" class="anons-article__body">
+                                            <img class="anons-article__img" src="img/content/usa.jpg" alt="фото"
+                                                loading="lazy">
+                                            <h6 class="anons-article__text">
+                                                Президентские выборы в США: Предчувствие гражданской войны
+                                            </h6>
+                                        </a>
+                                    </article>
+                                    <article class="small-article">
+                                        <time class="small-article__date" datetime="2020-10-23">
+                                            23 октября 2020
+                                        </time>
+                                        <h6>
+                                            <a href="#">
+                                                Появились белорусские цены<br>
+                                                на iPhone 12
+                                            </a>
+                                        </h6>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="sidebar home-page__sidebar gray">
+                        <h2 class="sidebar-title home-page__sidebar-title">Последние новости</h2>
+                        <article class="small-article">
+                            <a href="#">В Беларуси сегодня заработает единая подписка Apple One</a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">43 компании обанкротились,<br>
+                                но это еще не конец. Как COVID-19 потрепал авиацию</a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">Госрегулирование цен на социально значимые товары будет продлено
+                                до конца года</a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">В Беларуси сегодня заработает единая подписка Apple One</a>
+                        </article>
+                        <div>
+                            <a href="#" class="banner">
+                                <img class="banner__img" src="img/banners/macdac.jpg" alt="баннер" loading="lazy">
+                                <span class="banner__descr">300px x 250px</span>
+                            </a>
+                        </div>
+                        <article class="small-article">
+                            <a href="#">Выборы президента США.<br>
+                                Что произошло за ночь
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                Красивый дом на берегу озера
+                                в Канаде. Смотрите, что можно построить из заводских модулей
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                Выборы президента США.<br>
+                                Что произошло за ночь
+                            </a>
+                        </article>
+                        <div>
+                            <article class="anons-article">
+                                <a href="#" class="anons-article__body">
+                                    <img class="anons-article__img" src="img/content/shooting.jpg" alt="фото"
+                                        loading="lazy">
+                                    <h6 class="anons-article__text">
+                                        Расстрел мирных протестующих. Что произошло в Новочеркасске в 1962 году
+                                    </h6>
+                                </a>
+                            </article>
+                        </div>
+                        <article class="small-article">
+                            <a href="#">
+                                Как купить кровлю и не разориться? Топ-10 предложений
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                Открытие ФОКа с бассейном и сетью World Class на Дзержинского переносится на конец
+                                года
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                Брестчанин скрылся от ГАИ и заявил об угоне. На него завели уголовное дело
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                Лукашенко наделил новыми правами заказчика «Минск-Мира» и разрешил не сносить одно
+                                здание
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                Открытие ФОКа с бассейном и сетью World Class на Дзержинского переносится на конец
+                                года
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                Еще больше и лучше. Обзор короля iPhone 12 Pro Max
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                На «площади Перемен» силовики всю ночь простояли на выходах из подъездов. Что
+                                происходит?
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                «Для перевозки лиц, находящихся под стражей». Изучаем автозаки МВД РБ
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                «На одну вакансию сейчас претендуют четыре работника». Кому светит хорошая зарплата
+                                в Беларуси?
+                            </a>
+                        </article>
+                        <div>
+                            <a href="#" class="banner" style="height: 600px">
+                                <img class="banner__img" src="img/banners/partner-program.jpg"
+                                    alt="Как повысить свой доход в партнерских программах на 15-30%?" loading="lazy">
+                                <span class="banner__descr">300px x 250px</span>
+                            </a>
+                        </div>
+                        <article class="small-article">
+                            <a href="#">
+                                Прохожий заметил движущийся по склону холма лес и снял его на видео
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <a href="#">
+                                Еще одна авария с участием техники силовиков попала на видео
+                            </a>
+                        </article>
+                    </aside>
+                </div>
+            </div>
+
+            @@include('../../blocks/modules/video/_video.html')
+
+            <div class="container section">
+                <div class="grid col-sm-2 col-md-3 col-xl-4 gap-30 aifs">
+                    <section class="small-articles">
+                        <h2 class="line-title section-title">Финансы</h2>
+                        <article class="anons-article">
+                            <a href="#" class="anons-article__body">
+                                <img class="anons-article__img" src="img/content/bitcoin.jpg" alt="фото" loading="lazy">
+                                <h6 class="anons-article__text">
+                                    Биткоин заметно подорожал
+                                    и превысил 15 тысяч долларов. Почему и какой прогноз
+                                </h6>
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <time class="small-article__date" datetime="2020-10-23">
+                                23 октября 2020
+                            </time>
+                            <a href="#">
+                                43 компании обанкротились,
+                                но это еще не конец. Как COVID-19 потрепал авиацию
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <time class="small-article__date" datetime="2020-10-23">
+                                23 октября 2020
+                            </time>
+                            <a href="#">
+                                Появились белорусские цены
+                                на iPhone 12
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <time class="small-article__date" datetime="2020-10-23">
+                                23 октября 2020
+                            </time>
+                            <a href="#">
+                                43 компании обанкротились,
+                                но это еще не конец. Как COVID-19 потрепал авиацию
+                            </a>
+                        </article>
+                        <article class="small-article">
+                            <time class="small-article__date" datetime="2020-10-23">
+                                23 октября 2020
+                            </time>
+                            <a href="#">
+                                Появились белорусские цены
+                                на iPhone 12
+                            </a>
+                        </article>
+                    </section>
+                    <section class="horizon small-articles">
+                        <h2 class="line-title section-title">Кругозор</h2>
+                        <div class="grid col-sm-md-2">
+                            <article class="small-article horizon-article">
+                                <a href="#" class="small-article__inner">
+                                    <div class="small-article__img">
+                                        <img src="img/content/horizon/01.jpg" alt="фото" loading="lazy">
+                                    </div>
+                                    <p class="small-article__title pl-15">
+                                        Wargaming вывозит своих сотрудников
+                                        из Беларуси
+                                    </p>
+                                </a>
+                            </article>
+                            <article class="small-article horizon-article">
+                                <a href="#" class="small-article__inner">
+                                    <div class="small-article__img">
+                                        <img src="img/content/horizon/02.jpg" alt="фото" loading="lazy">
+                                    </div>
+                                    <p class="small-article__title pl-15">
+                                        Apple отчиталась
+                                        о рекордном росте выручки
+                                    </p>
+                                </a>
+                            </article>
+                            <article class="small-article horizon-article">
+                                <a href="#" class="small-article__inner">
+                                    <div class="small-article__img">
+                                        <img src="img/content/horizon/03.jpg" alt="фото" loading="lazy">
+                                    </div>
+                                    <p class="small-article__title pl-15">
+                                        PandaDoc приостановил проект помощи уволившимся силовикам
+                                    </p>
+                                </a>
+                            </article>
+                            <article class="small-article horizon-article">
+                                <a href="#" class="small-article__inner">
+                                    <div class="small-article__img">
+                                        <img src="img/content/horizon/01.jpg" alt="фото" loading="lazy">
+                                    </div>
+                                    <p class="small-article__title pl-15">
+                                        Wargaming вывозит своих сотрудников
+                                        из Беларуси
+                                    </p>
+                                </a>
+                            </article>
+                            <article class="small-article horizon-article">
+                                <a href="#" class="small-article__inner">
+                                    <div class="small-article__img">
+                                        <img src="img/content/horizon/02.jpg" alt="фото" loading="lazy">
+                                    </div>
+                                    <p class="small-article__title pl-15">
+                                        Apple отчиталась
+                                        о рекордном росте выручки
+                                    </p>
+                                </a>
+                            </article>
+                            <article class="small-article horizon-article">
+                                <a href="#" class="small-article__inner">
+                                    <div class="small-article__img">
+                                        <img src="img/content/horizon/03.jpg" alt="фото" loading="lazy">
+                                    </div>
+                                    <p class="small-article__title pl-15">
+                                        PandaDoc приостановил проект помощи уволившимся силовикам
+                                    </p>
+                                </a>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="small-articles">
+                        <h2 class="line-title section-title">Эксклюзив</h2>
+                        <div class="img-wrap">
+                            <img src="img/content/exclusive.jpg" alt="фото" loading="lazy">
+                        </div>
+                        <article class="small-article">
+                            <time class="small-article__date" datetime="2020-10-23">23 октября 2020</time>
+                            <h6>
+                                <a href="#">
+                                    43 компании обанкротились, но это еще не конец. Как COVID-19 потрепал
+                                    авиацию
+                                </a>
+                            </h6>
+                        </article>
+                        <article class="small-article">
+                            <time class="small-article__date" datetime="2020-10-23">23 октября 2020</time>
+                            <h6><a href="#">Появились белорусские цены на iPhone 12</a></h6>
+                        </article>
+                        <article class="small-article">
+                            <time class="small-article__date" datetime="2020-10-23">23 октября 2020</time>
+                            <h6>
+                                <a href="#">
+                                    43 компании обанкротились, но это еще не конец. Как COVID-19 потрепал
+                                    авиацию
+                                </a>
+                            </h6>
+                        </article>
+                        <article class="small-article">
+                            <time class="small-article__date" datetime="2020-10-23">23 октября 2020</time>
+                            <h6><a href="#">Появились белорусские цены на iPhone 12</a></h6>
+                        </article>
+                    </section>
+                    @@include('../../blocks/modules/gray-articles/_gray-articles.html', {
+                    "title": "Выбор редакции"
+                    })
+                </div>
+
+                @@include('../../blocks/modules/community/_community.html')
+                <div class="grid col-lg-4 gap-30 aifs">
+                    <section class="span-lg-3 small-articles">
+                        <h2 class="line-title section-title">
+                            В мире
+                        </h2>
+                        <div class="grid col-sm-2 col-lg-3 gap-30">
+                            <div class="grid gap-10">
+                                <article class="anons-article">
+                                    <a href="#" class="anons-article__body">
+                                        <img class="anons-article__img" src="img/content/usa.jpg" alt="фото"
+                                            loading="lazy">
+                                        <p class="anons-article__text">
+                                            Президентские выборы в США: Предчувствие гражданской войны
+                                        </p>
+                                    </a>
+                                </article>
+                                <article class="small-article">
+                                    <time class="small-article__date" datetime="2020-10-23">
+                                        23 октября 2020
+                                    </time>
+                                    <a class="small-article__title" href="#">
+                                        Появились белорусские цены<br>
+                                        на iPhone 12
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="grid gap-25">
+                                <article class="small-article">
+                                    <time class="small-article__date" datetime="2020-10-23">
+                                        23 октября 2020
+                                    </time>
+                                    <a class="small-article__title" href="#">
+                                        43 компании обанкротились,
+                                        но это еще не конец. Как COVID-19 потрепал авиацию
+                                    </a>
+                                </article>
+                                <a href="#" class="banner">
+                                    <img src="img/banners/radio.jpg"
+                                        alt="Слушай самые свежие новинки и 100% хиты на Радио Обозреватель"
+                                        loading="lazy">
+                                    <span class="banner__descr">300px x 250px</span>
+                                </a>
+                            </div>
+                            <div class="grid col-sm-md-2 lg-flex-col">
+                                <article class="small-article">
+                                    <time class="small-article__date" datetime="2020-10-23">
+                                        23 октября 2020
+                                    </time>
+                                    <a class="small-article__title" href="#">
+                                        43 компании обанкротились,<br>
+                                        но это еще не конец. Как COVID-19 потрепал авиацию
+                                    </a>
+                                </article>
+                                <article class="small-article grow">
+                                    <time class="small-article__date" datetime="2020-10-23">
+                                        23 октября 2020
+                                    </time>
+                                    <a class="small-article__title" href="#">
+                                        Появились белорусские цены<br>
+                                        на iPhone 12
+                                    </a>
+                                </article>
+                                <article class="small-article">
+                                    <time class="small-article__date" datetime="2020-10-23">
+                                        23 октября 2020
+                                    </time>
+                                    <a class="small-article__title" href="#">
+                                        43 компании обанкротились,<br>
+                                        но это еще не конец. Как COVID-19 потрепал авиацию
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    @@include('../../blocks/modules/subscribes/_subscribes.html')
+                </div>
+            </div>
+
+            @@include('../../blocks/modules/points-of-view/_points-of-view.html')
+
+            <div class="container section grid col-sm-2 col-lg-4 gap-30">
+                <section class="small-articles">
+                    <h2 class="line-title section-title">Отрасли и компании</h2>
+                    <div class="img-wrap">
+                        <img src="img/content/alcohol.jpg" alt="фото" loading="lazy">
+                    </div>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            Появились белорусские цены
+                            на iPhone 12
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            Появились белорусские цены
+                            на iPhone 12
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                </section>
+                <section class="small-articles">
+                    <h2 class="line-title section-title">Недвижимость</h2>
+                    <div class="img-wrap">
+                        <img src="img/content/realty.jpg" alt="фото" loading="lazy">
+                    </div>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            Появились белорусские цены
+                            на iPhone 12
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                    <a href="#" class="banner">
+                        <img src="img/banners/geo.jpg" alt="GEO business 2019" loading="lazy">
+                        <span class="banner__descr">300px x 250px</span>
+                    </a>
+                </section>
+                <section class="small-articles">
+                    <h2 class="line-title section-title">Транспорт</h2>
+                    <div class="img-wrap">
+                        <img src="img/content/police-cars.jpg" alt="фото" loading="lazy">
+                    </div>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            Появились белорусские цены
+                            на iPhone 12
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            Появились белорусские цены
+                            на iPhone 12
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                </section>
+                <section class="small-articles">
+                    <h2 class="line-title section-title">Технологии</h2>
+                    <div class="img-wrap">
+                        <img src="img/content/underground.jpg" alt="фото" loading="lazy">
+                    </div>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            Появились белорусские цены
+                            на iPhone 12
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            Появились белорусские цены
+                            на iPhone 12
+                        </a>
+                    </article>
+                    <article class="small-article">
+                        <time class="small-article__date" datetime="2020-10-23">
+                            23 октября 2020
+                        </time>
+                        <a class="small-article__title" href="#">
+                            43 компании обанкротились,
+                            но это еще не конец. Как COVID-19 потрепал авиацию
+                        </a>
+                    </article>
+                </section>
+            </div>
+
+            @@include('../../blocks/modules/partners-news/_partners-news.html')
+
+            @@include('../../blocks/modules/news-archive/_news-archive.html')
+        </main>
+        @@include('../../blocks/modules/footer/_footer.html')
+    </div>
+    @@include('../_js.html')
+
+</body>
+
+</html>
